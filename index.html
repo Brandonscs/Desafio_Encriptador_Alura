@@ -8,21 +8,44 @@
 
 <body>
 
-    <h1>Desario Encriptador</h1>
+    <h1 class="titulo">Desafio Encriptador</h1>
     
-    <section>
-        <p>Ingresar texto aqui</p>
-        <p>Texto encriptado/desencriptado</p>
+    <section class="seccion__principal">
+        <div class="seccion__principal__texto__ingresado">
+            <textarea id="texto__ingresado" placeholder="Ingresar texto aqui"></textarea>
+        </div>
+        <div class="seccion__principal__texto__devuelto">
+            <p id = "texto__devuelto">mensaje desencriptado</p>
+            <p id = "texto__vacio">mesaje vacio</p>
+        </div>
     </section>
     
-    <div>
-        <button>Encriptar</button>
-        <button>Desencriptar</button>
+    <div class="botones">
+        <button class="boton__encriptador" onclick="mostrarOcultarMensaje()">Encriptar</button>
+        <button class="boton__desencriptador" onclick="mostrarOcultarMensaje()">Desencriptar</button>
     </div>
     
-    <footer>
+    <footer class="footer">
         <h2>Desarrollado por Brandon Carvajal</h2>
     </footer>
 
+    
 </body>
+
+<script>
+    document.getElementById("texto__devuelto").style.display = "none";
+    
+    function mostrarOcultarMensaje() {
+        let texto = document.getElementById("texto__ingresado").value;
+
+        if (texto.trim() === "") {
+            document.getElementById("texto__devuelto").style.display = "none";
+            document.getElementById("texto__vacio").style.display = "block";
+        } else {
+            document.getElementById("texto__devuelto").style.display = "block";
+            document.getElementById("texto__vacio").style.display = "none";
+        }
+    }
+</script>
+
 </html>
