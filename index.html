@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de mensajes</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -13,17 +16,18 @@
     
     <main id="seccion-principal">
         <section id="entrada-mensaje">
-            <textarea id="entrada-mensaje-area" placeholder="Ingresar texto aquí"></textarea>
-            <p class="mensaje-informativo">solo letras minúsculas y sin acentos.</p>
+            <textarea id="entrada-mensaje-area" cols="20" rows="10" placeholder="Ingresar texto aquí"></textarea>
+            <p class="mensaje-informativo">
+                <i class="fas fa-exclamation-circle"></i> Solo letras minúsculas y sin acentos.
+            </p>
             <div class="botones">
-                <button class="boton" id="boton-encriptar" onclick="mostrarOcultarMensaje()">Encriptar</button>
-                <button class="boton" id="boton-desencriptar" onclick="mostrarOcultarMensaje()">Desencriptar</button>
+                <button class="boton" id="boton-encriptar" onclick="">Encriptar</button>
+                <button class="boton" id="boton-desencriptar" onclick="">Desencriptar</button>
             </div>
         </section>
     
         <section id="salida-mensaje">
-            <p id="mensaje-lleno">Mensaje desencriptado</p>
-            <p id="mensaje-vacio">Mensaje vacío</p>
+            <textarea id="salida-mensaje-area" cols="20" rows="10" readonly></textarea>
             <div class="botones">
                 <button class="boton" id="boton-copiar">Copiar</button>
             </div>
@@ -31,7 +35,9 @@
     </main>
     
     <footer id="pie-pagina">
-        <h2>Desarrollado por Brandon Carvajal</h2>
+        <h3>Desarrollado por Brandon Carvajal</h3>
+        <h3>Estudiante de <a href="https://www.aluracursos.com/">Alura Latam</a> con <a href="https://www.oracle.com/co/education/oracle-next-education/">Oracle Next Education</a>.</h3>
+        <h3>10/08/2024</h3>
     </footer>
     
 </body>

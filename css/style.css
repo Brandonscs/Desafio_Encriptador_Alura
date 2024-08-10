@@ -1,0 +1,125 @@
+*{
+    background-color: #e0dfdf;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: "Inter", sans-serif;
+}
+
+#titulo{
+    margin: 10px;
+    padding-left: 10px;
+    color: black;
+    font-weight: bolder;
+}
+
+#seccion-principal{
+    display: flex;
+    margin-left: 80px;
+    gap: 30px;
+}
+
+#entrada-mensaje{
+    flex: 2;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#entrada-mensaje-area{
+    border: none;
+    resize: none;
+    text-transform: lowercase;
+    margin-top: 50px;
+    font-size: 2rem;
+    color: rgb(0, 62, 155);
+    padding: 30px;
+}
+
+#salida-mensaje{
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#salida-mensaje-area{
+    background-color: white;
+    border: none;
+    resize: none;
+    text-transform: lowercase;
+    border-radius: 25px;
+    font-size: 2rem;
+    color: rgb(0, 62, 155);
+    padding: 30px;
+    height: 78%;
+}
+
+::placeholder {color: rgb(0, 62, 155)}
+
+textarea:focus {
+    outline: none;
+}
+
+.mensaje-informativo{
+    color: rgb(70, 70, 70);
+    font-weight: bolder;
+    font-size: 0.8rem;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton{
+    font-size: 1.5rem;
+    border: 1px solid #0A3B71;
+    border-radius: 18px;
+    cursor: pointer;
+    width: 50%;
+    margin: 10px;
+    color: rgb(0, 62, 155);
+}
+
+#boton-encriptar{
+    
+    background-color: #0A3B71;
+    color: #e0dfdf;
+}
+
+/*#boton-desencriptar{
+
+}*/
+
+#boton-copiar{
+    background-color: white;
+    margin-top: 42px;
+}
+
+.boton#boton-encriptar:hover,
+.boton#boton-copiar:hover,
+.boton#boton-desencriptar:hover {
+    background-color: rgb(73, 71, 71);
+    color: #e0dfdf;
+}
+
+h3{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    background-color: rgb(160, 160, 160);
+}
+
+#pie-pagina{
+    padding: 20px;
+    background-color: rgb(160, 160, 160);
+}
+
+a{
+    text-decoration: none;
+    background-color: rgb(160, 160, 160);
+}
+
+a:hover{
+    color: rgb(73, 71, 71);
+}
