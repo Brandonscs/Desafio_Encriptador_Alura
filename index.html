@@ -7,28 +7,33 @@
 </head>
 
 <body>
-
-    <h1 class="titulo">Desafio Encriptador</h1>
+    <header id="encabezado">
+        <h1 id="titulo">Desafio Encriptador</h1>
+    </header>
     
-    <section class="seccion__principal">
-        <div class="seccion__principal__texto__ingresado">
-            <textarea id="texto__ingresado" placeholder="Ingresar texto aqui"></textarea>
-        </div>
-        <div class="seccion__principal__texto__devuelto">
-            <p id = "texto__devuelto">mensaje desencriptado</p>
-            <p id = "texto__vacio">mesaje vacio</p>
-        </div>
-    </section>
+    <main id="seccion-principal">
+        <section id="entrada-mensaje">
+            <textarea id="entrada-mensaje-area" placeholder="Ingresar texto aquí"></textarea>
+            <p class="mensaje-informativo">solo letras minúsculas y sin acentos.</p>
+            <div class="botones">
+                <button class="boton" id="boton-encriptar" onclick="mostrarOcultarMensaje()">Encriptar</button>
+                <button class="boton" id="boton-desencriptar" onclick="mostrarOcultarMensaje()">Desencriptar</button>
+            </div>
+        </section>
     
-    <div class="botones">
-        <button class="boton__encriptador" onclick="mostrarOcultarMensaje()">Encriptar</button>
-        <button class="boton__desencriptador" onclick="mostrarOcultarMensaje()">Desencriptar</button>
-    </div>
+        <section id="salida-mensaje">
+            <p id="mensaje-lleno">Mensaje desencriptado</p>
+            <p id="mensaje-vacio">Mensaje vacío</p>
+            <div class="botones">
+                <button class="boton" id="boton-copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
     
-    <footer class="footer">
+    <footer id="pie-pagina">
         <h2>Desarrollado por Brandon Carvajal</h2>
     </footer>
-
+    
 </body>
 
 <script src="./js/app.js"></script>
