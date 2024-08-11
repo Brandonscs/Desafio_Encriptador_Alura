@@ -63,10 +63,12 @@
     font-size: 2rem;
     color: rgb(0, 62, 155);
     padding: 30px;
-    height: 78%;
+    margin-top: -70px;
+    height: 103%;
     background-image: url('../img/Muñeco.png');
     background-repeat: no-repeat;
-    background-position: center 80px;
+    background-position: center 120px;
+    background-size: 70%;
 }
 
 ::placeholder {color: rgb(0, 62, 155)}
@@ -75,12 +77,20 @@ textarea:focus {
     outline: none;
 }
 
-#mensaje-vacio {
-    margin-top: -230px;
+/*#mensaje-vacio {
+    margin-top: -350px;
     color: rgb(0, 62, 155);
     text-align: center;
     background-color: white;
     width: 70%;
+}*/
+
+#mensaje-vacio {
+    background-color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    margin: 0% 20% 0% 20%;
 }
 
 .mensaje-vacio-titulo{
@@ -91,7 +101,7 @@ textarea:focus {
 
 .mensaje-vacio-parrafo{
     background-color: white;
-    color: black;
+    color: rgb(70, 70, 70);
 }
 
 .mensaje-informativo{
@@ -102,7 +112,7 @@ textarea:focus {
 
 .botones{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .boton{
@@ -116,7 +126,6 @@ textarea:focus {
 }
 
 #boton-encriptar{
-    
     background-color: #0A3B71;
     color: #e0dfdf;
 }
@@ -128,7 +137,6 @@ textarea:focus {
 #boton-copiar{
     background-color: white;
     position: absolute;
-    right: 180px;
     bottom: 0px;
 }
 
@@ -140,6 +148,7 @@ textarea:focus {
 }
 
 #pie-pagina{
+    margin-top: 30px;
     padding: 20px;
     background-color: rgb(160, 160, 160);
 }
