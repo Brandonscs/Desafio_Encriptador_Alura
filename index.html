@@ -23,8 +23,8 @@
                 <i class="fas fa-exclamation-circle"></i> Solo letras minúsculas y sin acentos.
             </p>
             <div class="botones">
-                <button class="boton" id="boton-encriptar" onclick="">Encriptar</button>
-                <button class="boton" id="boton-desencriptar" onclick="">Desencriptar</button>
+                <button class="boton" id="boton-encriptar" onclick="encriptarMensaje()">Encriptar</button>
+                <button class="boton" id="boton-desencriptar" onclick="desencriptarMensaje()">Desencriptar</button>
             </div>
         </section>
     
@@ -35,7 +35,7 @@
                 <p class="mensaje-vacio-parrafo">Ingrese el texto que desea encriptar o desencriptar.</p>
             </div>
             <div class="botones">
-                <button class="boton" id="boton-copiar">Copiar</button>
+                <button class="boton" id="boton-copiar" onclick="copiarMensaje()"">Copiar</button>
             </div>
         </section>
     </main>
