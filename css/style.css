@@ -5,11 +5,21 @@
     font-family: "Inter", sans-serif;
 }
 
-#titulo{
+#encabezado{
+    display: flex;
+    align-items: center;
     margin: 10px;
     padding-left: 10px;
+}
+
+.logo{  
+    width: 7%;
+}
+
+#titulo{
     color: black;
     font-weight: bolder;
+    margin-left: 10px;
 }
 
 #seccion-principal{
@@ -36,10 +46,12 @@
 }
 
 #salida-mensaje{
+    position: relative;
     flex: 1;
     margin: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 #salida-mensaje-area{
@@ -52,12 +64,34 @@
     color: rgb(0, 62, 155);
     padding: 30px;
     height: 78%;
+    background-image: url('../img/Muñeco.png');
+    background-repeat: no-repeat;
+    background-position: center 80px;
 }
 
 ::placeholder {color: rgb(0, 62, 155)}
 
 textarea:focus {
     outline: none;
+}
+
+#mensaje-vacio {
+    margin-top: -230px;
+    color: rgb(0, 62, 155);
+    text-align: center;
+    background-color: white;
+    width: 70%;
+}
+
+.mensaje-vacio-titulo{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
+
+.mensaje-vacio-parrafo{
+    background-color: white;
+    color: black;
 }
 
 .mensaje-informativo{
@@ -93,7 +127,9 @@ textarea:focus {
 
 #boton-copiar{
     background-color: white;
-    margin-top: 42px;
+    position: absolute;
+    right: 180px;
+    bottom: 0px;
 }
 
 .boton#boton-encriptar:hover,
@@ -103,16 +139,17 @@ textarea:focus {
     color: #e0dfdf;
 }
 
+#pie-pagina{
+    padding: 20px;
+    background-color: rgb(160, 160, 160);
+}
+
 h3{
     color: black;
     text-decoration: none;
     font-weight: bolder;
     background-color: rgb(160, 160, 160);
-}
-
-#pie-pagina{
-    padding: 20px;
-    background-color: rgb(160, 160, 160);
+    margin-left: 20px;
 }
 
 a{
