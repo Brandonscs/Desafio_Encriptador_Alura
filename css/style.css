@@ -39,7 +39,7 @@
     border: none;
     resize: none;
     text-transform: lowercase;
-    margin-top: 50px;
+    margin-top: 20px;
     font-size: 2rem;
     color: rgb(0, 62, 155);
     padding: 30px;
@@ -76,14 +76,6 @@
 textarea:focus {
     outline: none;
 }
-
-/*#mensaje-vacio {
-    margin-top: -350px;
-    color: rgb(0, 62, 155);
-    text-align: center;
-    background-color: white;
-    width: 70%;
-}*/
 
 #mensaje-vacio {
     background-color: white;
@@ -130,10 +122,6 @@ textarea:focus {
     color: #e0dfdf;
 }
 
-/*#boton-desencriptar{
-
-}*/
-
 #boton-copiar{
     background-color: white;
     position: absolute;
@@ -168,4 +156,66 @@ a{
 
 a:hover{
     color: rgb(73, 71, 71);
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    #seccion-principal{
+        flex-direction: column;
+        margin-left: 0px;
+        gap: 20px;
+    }
+
+    #salida-mensaje-area{
+        width: 90%;
+        background-image: none;
+        margin-top: 0px;
+    }
+
+    #mensaje-vacio {
+        top: 40%;
+    }
+
+    #boton-copiar{
+        width: 70%;
+    }   
+}
+
+@media (max-width: 599px) {
+
+    .logo{  
+        width: 15%;
+    }
+
+    #seccion-principal{
+        flex-direction: column;
+        margin-left: 0px;
+        gap: 20px;
+    }
+
+    #salida-mensaje-area{
+        width: 90%;
+        background-image: none;
+        margin-top: 0px;
+    }
+
+    #mensaje-vacio {
+        top: 40%;
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton{
+        width: 70%;
+    }
+
+    #boton-copiar{
+        width: 70%;
+        left: 14%;
+    }  
+
 }
