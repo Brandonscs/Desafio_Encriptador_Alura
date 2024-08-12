@@ -154,6 +154,19 @@ a{
     background-color: rgb(160, 160, 160);
 }
 
+.link-personal{
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.logo-link{
+    margin-right: 10px;
+    margin-left: 20px;
+    background-color: black;
+}
+
 a:hover{
     color: rgb(73, 71, 71);
 }
@@ -217,5 +230,4 @@ a:hover{
         width: 70%;
         left: 14%;
     }  
-
 }
